@@ -45,11 +45,23 @@
                     </ul>
                     <ul class="p-0 m-0">
                         <li class="menu-item ripple  ">
-                            <a href="{{ route('detail-subscribtion.index') }}" data-mdb-placement="right"
+                            <a href="{{ route('detail-Subscription.index') }}" data-mdb-placement="right"
                                 data-mdb-toggle="tooltip" title="Karyawan" data-mdb-delay='{"show":"350", "hide":"0"}'
                                 class="sub-item">
                                 <i data-feather="grid" class="fa-fw"></i>
                                 <span>Detail Subscribtion</span>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="p-0 m-0">
+                        <li class="menu-item ripple  ">
+                            <a href="{{ route('payments.index') }}" data-mdb-placement="right"
+                                data-mdb-toggle="tooltip" title="Payment" data-mdb-delay='{"show":"350", "hide":"0"}'
+                                class="sub-item">
+                                <i data-feather="grid" class="fa-fw"></i>
+                                <span>Payment</span>
                             </a>
                         </li>
 

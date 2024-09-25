@@ -6,7 +6,7 @@
     <div class="container-fluid">
         <section>
             <div class="py-2 mb-4">
-                <h1 class="">{{ ('Subscribtion') }}</h1>
+                <h1 class="">{{ ('Subscription') }}</h1>
                 <!-- Breadcrumb -->
                 <nav class="d-flex">
                     <h6 class="mb-0">

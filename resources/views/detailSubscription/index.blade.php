@@ -47,9 +47,12 @@
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header d-flex justify-content-between align-items-center">
-                            <a href="" class="btn btn-primary">
-                                {{ ('Payment') }}
+                            <a href="{{ route('payments.index') }}" class="btn btn-primary">
+                                {{ __('Payments') }}
                             </a>
+
+
+
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
