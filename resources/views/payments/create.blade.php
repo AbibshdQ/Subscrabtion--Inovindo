@@ -28,18 +28,21 @@
                             <form action="{{ route('payments.store') }}" method="POST">
                                 @csrf
                                 <div class="mb-3">
-                                    <label for="amount" class="form-label">{{ __('Amount') }}</label>
-                                    <input type="text" class="form-control" id="amount" name="amount" required>
+                                    <label for="amount" class="form-label">Office Name</label>
+                                    <input type="text" name="office_name" id="office_name" class="form-control @error('office_name') is-invalid @enderror" value="{{ old('office_name') }}" maxlength="50" required>
+                                    @error('office_name')
+                                        <div class="invalid-feedback">
+                                            {{ $message }}
+                                        </div>
+                                    @enderror
                                 </div>
 
                                 <div class="mb-3">
                                     <label for="payment_type" class="form-label">{{ __('Payment Type') }}</label>
                                     <select class="form-select" id="payment_type" name="payment_type" required>
                                         <option value="" disabled selected>{{ __('Select Payment Type') }}</option>
-                                        <option value="credit_card">{{ __('Credit Card') }}</option>
-                                        <option value="debit_card">{{ __('Debit Card') }}</option>
-                                        <option value="paypal">{{ __('Cash') }}</option>
-                                        <!-- Tambahkan opsi lain sesuai kebutuhan -->
+                                        <option value="cash">{{ __('Cash') }}</option>
+                                        <option value="transfer">{{ __('Transfer') }}</option>
                                     </select>
                                 </div>
                                 <button type="submit" class="btn btn-primary">{{ __('Submit') }}</button>

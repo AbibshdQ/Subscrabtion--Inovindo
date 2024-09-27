@@ -7,7 +7,6 @@
         <section>
             <div class="py-2 mb-4">
                 <h1 class="">{{ ('Detail Subscription') }}</h1>
-                <!-- Breadcrumb -->
                 <nav class="d-flex">
                     <h6 class="mb-0">
                         <a href="" class="text-reset">{{ ('Home') }}</a>
@@ -15,7 +14,6 @@
                         <a href="" class="text-reset"><u>{{ ('Detail Subscription') }}</u></a>
                     </h6>
                 </nav>
-                <!-- Breadcrumb -->
             </div>
 
             <div class="row mb-4">
@@ -50,9 +48,6 @@
                             <a href="{{ route('payments.index') }}" class="btn btn-primary">
                                 {{ __('Payments') }}
                             </a>
-
-
-
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -67,6 +62,15 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        @foreach ($detailSubscriptions as $index => $detailSubscription)
+                                        <tr>
+                                            <td>{{ $index + 1 }}</td>
+                                            <td>{{ $detailSubscription->month }}</td>
+                                            <td>{{ $detailSubscription->payment->payment_date }}</td>
+                                            <td>{{ $detailSubscription->amount_paid }}</td>
+                                            <td>{{ $detailSubscription->status }}</td>
+                                        </tr>
+                                        @endforeach
                                     </tbody>
                                 </table>
                             </div>

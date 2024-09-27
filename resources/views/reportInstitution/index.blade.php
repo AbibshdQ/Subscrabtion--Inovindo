@@ -56,11 +56,6 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="card">
-                        <div class="card-header d-flex justify-content-between align-items-center">
-                            <a href="" class="btn btn-primary">
-                                {{ ('Payment') }}
-                            </a>
-                        </div>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table id="datatable-server" class="table table-hover table-striped nowrap" style="width: 100%">
