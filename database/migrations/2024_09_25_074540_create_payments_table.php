@@ -9,12 +9,15 @@ class CreatePaymentsTable extends Migration
     public function up()
     {
         Schema::create('payments', function (Blueprint $table) {
-            $table->id();  
+            $table->increments('id');  
+            $table->unsignedInteger('user_id');  
             $table->decimal('pay', 10, 2);
             $table->enum('payment_type', ['cash', 'transfer']);
             $table->enum('payment_status', ['Paid', 'Installment', 'Failed']);
             $table->timestamp('payment_date');
             $table->timestamps();
+
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
         
     }

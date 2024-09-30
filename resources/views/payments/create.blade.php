@@ -27,16 +27,30 @@
                         <div class="card-body">
                             <form action="{{ route('payments.store') }}" method="POST">
                                 @csrf
+                                <div class="mb-2">
+                                    <label for="name" class="form-label">Nama Intership</label>
+                                    <select class="form-select @error('name') is-invalid @enderror" name="name">
+                                        <option value="" disabled selected>{{ __('Select User') }}</option>
+                                        @foreach ($users as $user)
+                                            <option value="{{ $user->id }}">{{ $user->name }}</option>
+                                        @endforeach
+                                    </select>
+                                    @error('name')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
+                                </div>
                                 <div class="mb-3">
-                                    <label for="amount" class="form-label">Office Name</label>
-                                    <input type="text" name="office_name" id="office_name" class="form-control @error('office_name') is-invalid @enderror" value="{{ old('office_name') }}" maxlength="50" required>
-                                    @error('office_name')
+                                    <label for="amount" class="form-label">Amount</label>
+                                    <input type="text" name="amount" id="amount" class="form-control @error('amount') is-invalid @enderror" value="{{ old('amount') }}" maxlength="50" required>
+                                    @error('amount')
                                         <div class="invalid-feedback">
                                             {{ $message }}
                                         </div>
                                     @enderror
                                 </div>
-
+                            
                                 <div class="mb-3">
                                     <label for="payment_type" class="form-label">{{ __('Payment Type') }}</label>
                                     <select class="form-select" id="payment_type" name="payment_type" required>
@@ -46,8 +60,6 @@
                                     </select>
                                 </div>
                                 <button type="submit" class="btn btn-primary">{{ __('Submit') }}</button>
-                                <button type="submit" class="btn btn-primary">{{ __('Back') }}</button>
-
                             </form>
                         </div>
                     </div>

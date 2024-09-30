@@ -43,18 +43,38 @@
                                     <thead>
                                         <tr>
                                             <th><input type="checkbox" id="select-all"></th> <!-- Checkbox All -->
-                                            <th>{{ ('No') }}</th>
+                                            {{-- <th>{{ ('No') }}</th> --}}
                                             <th>{{ ('Name') }}</th>
                                             <th>{{ ('Institution') }}</th>
                                             <th>{{ ('Start Date') }}</th>
                                             <th>{{ ('End Date') }}</th>
+                                            <th>{{ ('Is Free') }}</th>
                                             <th>{{ ('Status') }}</th>
                                             <th>{{ ('Actions') }}</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        {{-- Data akan ditampilkan di sini --}}
+                                        @foreach ($user_subscriptions as $index => $subscription)
+                                        <tr>
+                                            <td>{{ $index + 1 }}</td>
+                                            <td>{{ $subscription->user->name }}</td>
+                                            <td>{{ $subscription->institution->name_institution }}</td>
+                                            <td>{{ $subscription->start_date }}</td>
+                                            <td>{{ $subscription->end_date }}</td>
+                                            <td>{{ $subscription->duration_month }}</td>
+                                            <td>{{ $subscription->is_free ? 'Yes' : 'No' }}</td>
+                                            <td>
+                                                <a href="{{ route('detail-Subscription.index') }}" class="btn btn-warning btn-sm">Detail</a>
+                                                <form action="" method="POST" style="display: inline;">
+                                                    @csrf
+                                                    @method('DELETE')
+                                                    <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure?')">Delete</button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                        @endforeach
                                     </tbody>
+                                    
                                 </table>
                             </div>
                         </div>
