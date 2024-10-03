@@ -1,6 +1,3 @@
-<body class="bg-body">
-    <div class="backdrop" id="backdrop"></div>
-    @include('layouts.navbar')
 
     <nav class="sidebar sidebar-mini sticky-top" id="sidebar">
         <div class="menu shadow pb-5" id="sidebar-scroll">
@@ -102,5 +99,5 @@
         </div>
 
        
-        </div>
+        
     </nav>

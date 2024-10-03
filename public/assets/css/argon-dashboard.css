@@ -661,10 +661,10 @@ progress {
 }
 @media (min-width: 1400px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1320px;
+    /* max-width: 1320px; */
   }
 }
-.row {
+/* .row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
@@ -680,7 +680,7 @@ progress {
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-top: var(--bs-gutter-y);
-}
+} */
 
 .col {
   flex: 1 0 0%;
@@ -21032,10 +21032,10 @@ hr.horizontal.gray-light {
 }
 
 @media (min-width: 992px) {
-  :not(.main-content) .navbar .dropdown .dropdown-menu {
+  :not(.main-content-argon) .navbar .dropdown .dropdown-menu {
     top: 2.25rem !important;
   }
-  :not(.main-content) .navbar .dropdown .dropdown-menu .dropdown .dropdown-menu {
+  :not(.main-content-argon) .navbar .dropdown .dropdown-menu .dropdown .dropdown-menu {
     top: 0 !important;
   }
 }
@@ -21781,7 +21781,7 @@ hr.horizontal.gray-light {
   color: #fff;
 }
 
-.main-content,
+.main-content-argon,
 .sidenav {
   transition: all 0.2s ease-in-out;
 }
@@ -21800,10 +21800,10 @@ hr.horizontal.gray-light {
   .sidenav .sidenav-toggler {
     padding: 1.5rem;
   }
-  .sidenav.fixed-start + .main-content {
+  .sidenav.fixed-start + .main-content-argon {
     margin-left: 17.125rem;
   }
-  .sidenav.fixed-end + .main-content {
+  .sidenav.fixed-end + .main-content-argon {
     margin-right: 17.125rem;
   }
 }
@@ -21846,7 +21846,7 @@ hr.horizontal.gray-light {
   .g-sidenav-show:not(.rtl) .sidenav {
     transform: translateX(-17.125rem);
   }
-  .g-sidenav-show .sidenav.fixed-start + .main-content {
+  .g-sidenav-show .sidenav.fixed-start + .main-content-argon {
     margin-left: 0 !important;
   }
   .g-sidenav-show.g-sidenav-pinned .sidenav {
@@ -22003,19 +22003,19 @@ hr.horizontal.gray-light {
 }
 
 @media (min-width: 1200px) {
-  .g-sidenav-hidden.rtl .main-content {
+  .g-sidenav-hidden.rtl .main-content-argon {
     margin-right: 6rem !important;
   }
-  .g-sidenav-hidden.rtl .main-content .navbar-vertical:hover {
+  .g-sidenav-hidden.rtl .main-content-argon .navbar-vertical:hover {
     max-width: 15.625rem !important;
   }
-  .g-sidenav-hidden.rtl .sidenav:hover + .main-content {
+  .g-sidenav-hidden.rtl .sidenav:hover + .main-content-argon {
     margin-right: 17.125rem !important;
   }
   .g-sidenav-hidden .navbar-vertical {
     max-width: 6rem !important;
   }
-  .g-sidenav-hidden .navbar-vertical.fixed-start + .main-content {
+  .g-sidenav-hidden .navbar-vertical.fixed-start + .main-content-argon {
     margin-left: 7.5rem;
   }
   .g-sidenav-hidden .navbar-vertical .navbar-brand img {
@@ -22064,7 +22064,7 @@ hr.horizontal.gray-light {
   .g-sidenav-hidden .navbar-vertical:hover {
     max-width: 15.625rem !important;
   }
-  .g-sidenav-hidden .navbar-vertical:hover.fixed-start + .main-content {
+  .g-sidenav-hidden .navbar-vertical:hover.fixed-start + .main-content-argon {
     margin-left: 17.125rem;
   }
   .g-sidenav-hidden .navbar-vertical:hover .navbar-brand span {
