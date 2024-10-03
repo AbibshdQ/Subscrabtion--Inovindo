@@ -6,10 +6,10 @@
         <div class="menu shadow pb-5" id="sidebar-scroll">
             <ul class="menu-wrapper">
                 <li class="menu-item ripple">
-                    <a href="https://inovindoacademy.com/admin/dashboard" data-mdb-placement="right"
+                    <a href="{{ route('dashboard') }}" data-mdb-placement="right"
                         data-mdb-toggle="tooltip" title="Beranda" data-mdb-delay='{"show":"350", "hide":"0"}'>
                         <i data-feather="home" class="fa-fw"></i>
-                        <span>Beranda</span>
+                        <span>Dashboard</span>
                     </a>
                 </li>
                 <li class="menu-item ripple">

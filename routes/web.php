@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DetailSubscrabtionController;
 use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\ReporInstitutionSubscrabtionController;
@@ -7,6 +8,7 @@ use App\Http\Controllers\ReportUserSubscrabtionController;
 use App\Http\Controllers\SubscriptionController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PaymentController;
+use Illuminate\Support\Facades\Auth;
 
 Route::get('/', function () {
     return view('layouts.main');
@@ -25,4 +27,11 @@ Route::get('/payments', [PaymentController::class, 'index'])->name('payments.ind
 Route::resource('/payments', PaymentController::class);
 
 
-
+//from template
+// Route::resource('/dashboard', DashboardController::class);
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+ 
+Route::post('/logout', function () {
+    Auth::logout();
+    return redirect('/');
+})->name('logout');
