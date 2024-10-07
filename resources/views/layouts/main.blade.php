@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>INOVINDO ACADEMY</title>
+    <title>System Subscription</title>
     <meta
       name="csrf-token"
       content="lbvVITfSBu0gPIXPb0aIZdu6UNSVIw5g7tYRBKKr"

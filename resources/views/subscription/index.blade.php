@@ -2,7 +2,6 @@
 
 @section('container')
 
-<div class="main-content">
     <div class="container-fluid">
         <section>
             <div class="py-2 mb-4">
@@ -83,7 +82,6 @@
             </div>
         </section>
     </div>
-</div>
 
 @endsection
 

@@ -2,10 +2,9 @@
 
 @section('container')
 
-<div class="main-content">
     <div class="container-fluid">
         <section>
-            <div class="py-2 mb-4">
+            <div class="py-2 mb-3">
                 <h1 class="">{{ ('Report User Payment') }}</h1>
                 <!-- Breadcrumb -->
                 <nav class="d-flex">
@@ -24,7 +23,7 @@
                     <div class="card">
                         <div class="card-header d-flex justify-content-between align-items-center">
                             <!-- Informasi detail di sebelah kiri -->
-                            <h5 class="mb-0">{{ ('Subscription Information') }}</h5>
+                            <h5 class="">{{ ('Subscription Information') }}</h5>
                             <!-- Tombol Cetak di sebelah kanan -->
                             <button class="btn btn-success" onclick="window.print()">
                                 <i class="fa fa-print"></i> {{ ('Print') }}
@@ -80,6 +79,5 @@
 
         </section>
     </div>
-</div>
 
 @endsection
