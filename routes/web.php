@@ -14,6 +14,10 @@ Route::get('/', function () {
     return view('layouts.main');
 });
 
+// Route::get('/register', function () {
+//     return view('layouts.create');
+// });
+
 Route::resource('/subscribtion', SubscriptionController::class);
 Route::get('subscriptions/{id}', [SubscriptionController::class, 'show'])->name('subscriptions.show');
 
