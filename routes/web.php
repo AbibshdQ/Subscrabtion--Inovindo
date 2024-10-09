@@ -8,6 +8,7 @@ use App\Http\Controllers\ReportUserSubscrabtionController;
 use App\Http\Controllers\SubscriptionController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\PdfController;
 use Illuminate\Support\Facades\Auth;
 
 Route::get('/', function () {
@@ -29,6 +30,11 @@ Route::resource('/report-institution', ReporInstitutionSubscrabtionController::c
 
 Route::get('/payments', [PaymentController::class, 'index'])->name('payments.index');
 Route::resource('/payments', PaymentController::class);
+
+
+//Cetak Pdf
+Route::get('/cetak-pdf', [PdfController::class, 'cetakPDF'])->name('cetak.pdf');
+Route::get('generate-pdf/', [App\Http\Controllers\PdfController::class, 'PdfGenerate']);
 
 
 //from template

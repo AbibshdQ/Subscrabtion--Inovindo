@@ -25,7 +25,7 @@
                             <!-- Informasi detail di sebelah kiri -->
                             <h5 class="">{{ ('Subscription Information') }}</h5>
                             <!-- Tombol Cetak di sebelah kanan -->
-                            <button class="btn btn-success" onclick="window.print()">
+                            <button class="btn btn-success" onclick="window.location.href='{{ route('cetak.pdf') }}'">
                                 <i class="fa fa-print"></i> {{ ('Print') }}
                             </button>
                         </div>
