@@ -64,7 +64,7 @@
 
                     </ul>
                 </div>
-                <div class="ps-3 text-muted menu-title">
+                <!-- <div class="ps-3 text-muted menu-title">
                     <small>Report Peserta Magang</small>
                 </div>
                 <li class="menu-item ripple">
@@ -81,7 +81,7 @@
                         <span>Report Institution Payment</span>
                     </a>
                 </li>
-                 
+                  -->
                 <div class="ps-3 text-muted menu-title">
                     <small>Pengaturan</small>
                 </div>
