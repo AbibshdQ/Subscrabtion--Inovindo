@@ -20,6 +20,6 @@ class PdfController extends Controller
         ];
 
         $pdf = PDF::loadView('report.user_payment', $data);
-        return $pdf->stream('user_payment_report.pdf');
+        return $pdf->stream('User Report Payment.pdf');
     }
 }

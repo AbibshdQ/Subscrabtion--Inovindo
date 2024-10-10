@@ -27,7 +27,7 @@
         }
         .left-info {
             top: 0;
-            left: 40;
+            left: 10;
             text-align: left;
         }
         .right-info {
@@ -96,15 +96,15 @@
         <div class="header-section">
             <!-- Informasi di sebelah kiri -->
             <div class="left-info">
-                <p><strong>Nama:</strong> Habib Maulana Shidiq</p>
-                <p><strong>NIS:</strong> 123456789</p>
-                <p><strong>Asal:</strong> Politeknik Negeri Padang</p>
+                <p><strong>Nama :</strong> Habib Maulana Shidiq</p>
+                <p><strong>NIM / NIS :</strong> 123456789</p>
+                <p><strong>Asal :</strong> Politeknik Negeri Padang</p>
             </div>
             <!-- Informasi di sebelah kanan -->
             <div class="right-info">
-                <p><strong>Periode:</strong> 2023</p>
-                <p><strong>Awal Prakerin:</strong> Januari</p>
-                <p><strong>Akhir Prakerin:</strong> Desember</p>
+                <p><strong>Periode :</strong> 2023</p>
+                <p><strong>Awal Prakerin :</strong> Januari</p>
+                <p><strong>Akhir Prakerin :</strong> Desember</p>
             </div>
         </div>
 
@@ -117,7 +117,7 @@
                     <th>Maret</th>
                 </tr>
                 <tr>
-                    <td >05-01-2024</td>
+                    <td >05-01-2024 </td>
                     <td>05-02-2024</td>
                     <td>05-03-2024</td>
                 </tr>

@@ -15,10 +15,6 @@ Route::get('/', function () {
     return view('layouts.main');
 });
 
-// Route::get('/register', function () {
-//     return view('layouts.create');
-// });
-
 Route::resource('/subscribtion', SubscriptionController::class);
 Route::get('subscriptions/{id}', [SubscriptionController::class, 'show'])->name('subscriptions.show');
 
@@ -38,10 +34,10 @@ Route::get('generate-pdf/', [App\Http\Controllers\PdfController::class, 'PdfGene
 
 
 //from template
-// Route::resource('/dashboard', DashboardController::class);
+Route::resource('/dashboard', DashboardController::class);
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
  
-Route::post('/logout', function () {
-    Auth::logout();
-    return redirect('/');
-})->name('logout');
+// Route::post('/logout', function () {
+//     Auth::logout();
+//     return redirect('/');
+// })->name('logout');
