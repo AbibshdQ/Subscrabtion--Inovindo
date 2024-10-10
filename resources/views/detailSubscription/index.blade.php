@@ -17,29 +17,36 @@
             </div>
 
             <div class="row mb-4">
-                <div class="col-md-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <p><strong>{{ ('Name') }}:</strong> Habib Maulana Shidiq</p>
-                                </div>
-                                <div class="col-md-6">
-                                    <p><strong>{{ ('Institution') }}:</strong> Politeknik Negeri Padang</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <p><strong>{{ ('Duration (Months)') }}:</strong> 5 Months</p>
-                                </div>
-                                <div class="col-md-6">
-                                    <p><strong>{{ ('Payment Status') }}:</strong> Paid</p>
-                                </div>
-                            </div>
-                        </div>
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div></div> <!-- Tempat untuk menjaga jarak dengan teks -->
+                    <button class="btn btn-success" onclick="window.location.href='{{ route('cetak.user.pdf') }}'">
+                        <i class="fa fa-print"></i> {{ ('Print') }}
+                    </button>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><strong>{{ ('Name') }}:</strong> Habib Maulana Shidiq</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p><strong>{{ ('Institution') }}:</strong> Politeknik Negeri Padang</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><strong>{{ ('Duration (Months)') }}:</strong> 5 Months</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p><strong>{{ ('Payment Status') }}:</strong> Paid</p>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+
 
             <div class="row">
                 <div class="col-md-12">

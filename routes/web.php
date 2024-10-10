@@ -29,7 +29,9 @@ Route::resource('/payments', PaymentController::class);
 
 
 //Cetak Pdf
-Route::get('/cetak-pdf', [PdfController::class, 'cetakPDF'])->name('cetak.pdf');
+Route::get('/cetak-pdf', [PdfController::class, 'usercetakPDF'])->name('cetak.user.pdf');
+Route::get('/cetak/selectuser/pdf', [PdfController::class, 'selectusercetakPDF'])->name('cetak.selectuser.pdf');
+
 Route::get('generate-pdf/', [App\Http\Controllers\PdfController::class, 'PdfGenerate']);
 
 
