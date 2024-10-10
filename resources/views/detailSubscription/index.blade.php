@@ -46,7 +46,7 @@
                     <div class="card">
                         <div class="card-header d-flex justify-content-between align-items-center">
                             <a href="{{ route('payments.index') }}" class="btn btn-primary">
-                                {{ __('Payments') }}
+                                {{ __('Generate') }}
                             </a>
                         </div>
                         <div class="card-body">
@@ -59,6 +59,7 @@
                                             <th>{{ ('Payment Date') }}</th>
                                             <th>{{ ('Amount') }}</th>
                                             <th>{{ ('Status') }}</th>
+                                            <th>{{ ('Action') }}</th>
                                         </tr>
                                     </thead>
                                     <tbody>

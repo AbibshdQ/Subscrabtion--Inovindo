@@ -4,7 +4,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-xl-12 col-12 mb-4" id="fade-card" style="transition: all 1s ease;">
-                <div class="card" style="background: linear-gradient(135deg, #f3ec78, #af4261); transition: all 1s ease;">
+                <div class="card" style="background: linear-gradient(135deg, #3872de, #4389da ); transition: all 1s ease;">
                     <div class="card-body p-3">
                         <div class="row">
                             <div class="col-8">
@@ -13,7 +13,7 @@
                                         Selamat Datang Admin 😊
                                     </h5>
                                     <p class="mb-0" style="color: #f8f9fa;">
-                                        `So truly where there is hardship there is also ease..` (Al-Insyirah: 5)
+                                        'So truly where there is hardship there is also ease' <small>(Al-Insyirah: 5)</small>
                                     </p>
                                 </div>
                             </div>

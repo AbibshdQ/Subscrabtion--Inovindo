@@ -8,6 +8,7 @@ use App\Http\Controllers\ReportUserSubscrabtionController;
 use App\Http\Controllers\SubscriptionController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\PdfController;
 use Illuminate\Support\Facades\Auth;
 
 Route::get('/', function () {
@@ -27,11 +28,16 @@ Route::get('/payments', [PaymentController::class, 'index'])->name('payments.ind
 Route::resource('/payments', PaymentController::class);
 
 
+//Cetak Pdf
+Route::get('/cetak-pdf', [PdfController::class, 'cetakPDF'])->name('cetak.pdf');
+Route::get('generate-pdf/', [App\Http\Controllers\PdfController::class, 'PdfGenerate']);
+
+
 //from template
-// Route::resource('/dashboard', DashboardController::class);
+Route::resource('/dashboard', DashboardController::class);
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
  
-Route::post('/logout', function () {
-    Auth::logout();
-    return redirect('/');
-})->name('logout');
+// Route::post('/logout', function () {
+//     Auth::logout();
+//     return redirect('/');
+// })->name('logout');
