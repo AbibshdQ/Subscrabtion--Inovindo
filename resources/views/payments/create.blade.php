@@ -27,7 +27,7 @@
                             <form action="{{ route('payments.store') }}" method="POST">
                                 @csrf
                                 <div class="mb-2">
-                                    <label for="name" class="form-label">Nama Intership</label>
+                                    <label for="name" class="form-label">Name</label>
                                     <select class="form-select @error('name') is-invalid @enderror" name="name">
                                         <option value="" disabled selected>{{ __('Select User') }}</option>
                                         @foreach ($users as $user)

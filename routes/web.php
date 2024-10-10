@@ -26,17 +26,20 @@ Route::resource('/detail-Subscription', DetailSubscrabtionController::class);
 
 Route::resource('/report-user', ReportUserSubscrabtionController::class);
 
-Route::resource('/report-institution', ReporInstitutionSubscrabtionController::class);
+Route::resource('/report-select', ReporInstitutionSubscrabtionController::class);
 
 Route::get('/payments', [PaymentController::class, 'index'])->name('payments.index');
 Route::resource('/payments', PaymentController::class);
 
 
 //Cetak Pdf
-Route::get('/cetak-pdf', [PdfController::class, 'cetakPDF'])->name('cetak.pdf');
+Route::get('/cetak-pdf', [PdfController::class, 'usercetakPDF'])->name('cetak.user.pdf');
+Route::get('/cetak/selectuser/pdf', [PdfController::class, 'selectusercetakPDF'])->name('cetak.selectuser.pdf');
 Route::get('generate-pdf/', [App\Http\Controllers\PdfController::class, 'PdfGenerate']);
+// Route::get('/cetak-user-pdf', [ReportUserSubscrabtionController::class, 'cetakUserPdf'])->name('cetak.user.pdf');
+// Route::get('/cetak-select-user-pdf', [ReporInstitutionSubscrabtionController::class, 'cetakSelectUserPdf'])->name('cetak.selectuser.pdf');
 
-
+ 
 //from template
 // Route::resource('/dashboard', DashboardController::class);
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');

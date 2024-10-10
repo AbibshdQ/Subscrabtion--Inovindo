@@ -67,7 +67,7 @@
                 <div class="ps-3 text-muted menu-title">
                     <small>Report Peserta Magang</small>
                 </div>
-                <li class="menu-item ripple">
+                <!-- <li class="menu-item ripple">
                     <a href="{{ route('report-user.index') }}" data-mdb-placement="right"
                         data-mdb-toggle="tooltip" title="Report" data-mdb-delay='{"show":"350", "hide":"0"}'>
                         <i data-feather="feather" class="fa-fw"></i>
@@ -75,12 +75,12 @@
                     </a>
                 </li>
                 <li class="menu-item ripple">
-                    <a href="{{ route('report-institution.index')  }}" data-mdb-placement="right"
+                    <a href="{{ route('report-select.index')  }}" data-mdb-placement="right"
                         data-mdb-toggle="tooltip" title="Report" data-mdb-delay='{"show":"350", "hide":"0"}'>
                         <i data-feather="feather" class="fa-fw"></i>
-                        <span>Report Institution Payment</span>
+                        <span>Report Select User Payment</span>
                     </a>
-                </li>
+                </li> -->
                  
                 <div class="ps-3 text-muted menu-title">
                     <small>Pengaturan</small>
